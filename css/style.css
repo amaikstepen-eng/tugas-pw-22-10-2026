@@ -1,0 +1,145 @@
+:root {
+    --warna-utama: #0d3b8c;
+    --warna-aksen: #f5a623;
+}
+
+body {
+    font-family: "Segoe UI", system-ui, sans-serif;
+    color: #2b2f36;
+}
+
+.navbar-sekolah {
+    background-color: var(--warna-utama);
+}
+
+.navbar-sekolah .navbar-brand,
+.navbar-sekolah .nav-link {
+    color: #fff;
+}
+
+.navbar-sekolah .nav-link:hover,
+.navbar-sekolah .nav-link.active {
+    color: var(--warna-aksen);
+}
+
+.navbar-sekolah .navbar-toggler {
+    border-color: rgba(255, 255, 255, .6);
+}
+
+.navbar-sekolah .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.hero {
+    background: linear-gradient(rgba(13, 59, 140, .75), rgba(13, 59, 140, .75)),
+        url("https://placehold.co/1600x700/0d3b8c/ffffff?text=Foto+SMKN+2+Padang") center/cover;
+    color: #fff;
+    padding: 6rem 0;
+}
+
+.judul-seksi {
+    font-weight: 700;
+    color: var(--warna-utama);
+    position: relative;
+    padding-bottom: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.judul-seksi::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--warna-aksen);
+    border-radius: 2px;
+}
+
+.text-center .judul-seksi::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-hover {
+    transition: transform .2s, box-shadow .2s;
+}
+
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 .75rem 1.5rem rgba(0, 0, 0, .15);
+}
+
+.ikon-jurusan {
+    font-size: 3.5rem;
+    color: var(--warna-utama);
+}
+
+.page-header {
+    background: var(--warna-utama);
+    color: #fff;
+    padding: 3rem 0;
+}
+
+footer.footer-sekolah {
+    background: #0a2a63;
+    color: #dbe4f5;
+}
+
+.topbar {
+    background: #082457;
+    color: #dbe4f5;
+}
+
+.topbar a {
+    color: #dbe4f5;
+    text-decoration: none;
+}
+
+.topbar a:hover {
+    color: var(--warna-aksen);
+}
+
+.quick-link {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background: var(--warna-utama);
+    border-radius: .75rem;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    height: 100%;
+    transition: transform .2s, background .2s;
+}
+
+.quick-link:hover {
+    background: var(--warna-aksen);
+    color: #1b1b1b;
+    transform: translateY(-4px);
+}
+
+.quick-link i {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: .4rem;
+}
+
+.galeri img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    transition: transform .3s;
+}
+
+.galeri .item {
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.galeri .item:hover img {
+    transform: scale(1.08);
+}
+
+.kepsek-foto {
+    border: 6px solid var(--warna-aksen);
+}
